@@ -1,0 +1,14 @@
+language: python
+
+# It's not actually Python, but may not matter.
+python:
+  - "3.6"
+
+install:
+  - sudo apt-get -qq update
+  - sudo apt-get -y install make plantuml
+  # for epstopdf:
+  - sudo apt-get -y install texlive-font-utils
+
+script:
+  - make
