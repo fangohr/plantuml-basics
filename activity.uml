@@ -1,0 +1,8 @@
+@startuml
+!include plantuml.h
+start
+:Hello world;
+:This is on defined on
+several **lines**;
+end
+@enduml
