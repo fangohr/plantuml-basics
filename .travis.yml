@@ -11,4 +11,5 @@ install:
   - sudo apt-get -y install texlive-font-utils
 
 script:
+  - cat /etc/issue
   - make
