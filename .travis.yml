@@ -5,6 +5,7 @@ python:
   - "3.6"
 
 install:
+  - cat /etc/issue
   - sudo apt-get -qq update
   - sudo apt-get -y install make
   - sudo apt-get -y install plantuml
