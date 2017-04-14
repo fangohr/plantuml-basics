@@ -1,14 +1,24 @@
 activity:
-	@# create file activity.eps
 	plantuml -teps activity.uml
 	epstopdf activity.eps
 
-clean:
-	rm -f activity.png activity.pdf activity.eps
+classes:
+	plantuml -teps classes.uml
+	epstopdf classes.eps
 
+components:
+	plantuml -teps components.uml
+	epstopdf components.eps
+
+
+
+clean:
+	rm -f *eps *pdf
 
 test: clean
 	make activity
+	make classes
+	make components
 
 
 travis:
