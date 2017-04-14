@@ -1,21 +1,17 @@
 # use Ubuntu 16.04
-dist: xenial
-sudo: required
+#dist: xenial
+#sudo: required
 
-language: python
+services: docker
+
+#language: python
 
 # It's not actually Python, but may not matter.
-python:
-  - "3.6"
+#python:
+#  - "3.6"
 
-install:
-  - cat /etc/issue
-  - sudo apt-get -qq update
-  - sudo apt-get -y install make
-  - sudo apt-get -y install plantuml
-  # for epstopdf:
-  - sudo apt-get -y install texlive-font-utils
+#install:
+
 
 script:
-  - cat /etc/issue
-  - make
+  - make travis
