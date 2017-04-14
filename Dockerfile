@@ -7,4 +7,5 @@ RUN apt-get -y install plantuml
 RUN apt-get -y install texlive-font-utils
 
 WORKDIR /usr/local
-RUN git clone https://github.com/fangohr/plantuml-basics.git
+RUN git  clone https://github.com/fangohr/plantuml-basics.git
+WORKDIR /usr/local/plantuml-basics

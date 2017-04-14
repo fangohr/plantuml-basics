@@ -14,7 +14,8 @@ test: clean
 travis:
 	docker build -t dockertestimage .
 	#docker run --privileged -ti -d --name testcontainer dockertestimage
-	docker run -d --name testcontainer dockertestimage
-	docker exec testcontainer make test
-	docker stop testcontainer
+	#docker run -d --name testcontainer dockertestimage
+	#docker exec testcontainer make test
+	docker run -t dockertestimage make test
+	#docker stop testcontainer
 	# docker rm testcontainer
