@@ -10,6 +10,10 @@ components:
 	plantuml -teps components.uml
 	epstopdf components.eps
 
+components2:
+	plantuml -teps components2.uml
+	epstopdf components2.eps
+
 
 
 clean:
@@ -21,6 +25,7 @@ test: clean
 	make activity
 	make classes
 	make components
+	make components2
 
 
 # travis target runs tests in tailored docker image
